@@ -8,7 +8,7 @@ string Punctuation_for_spaces(const string& str);            // The function rep
                                                    
 int main()
 {
-    string str = " - don't use the \"as-if\" rule. \n  - don't use the as-if rule. \n I don't know it; \n He doesn't speak English, \n I won't see it - \n I didn't see it: \n You haven't known it. \n \"She hasn't called you.\" \n";
+    string str = " - don't use the \"as-if\" rule. \n - don't use the as-if rule. \n I don't know it; \n He doesn't speak English, \n I won't see it - \n I didn't see it: \n You haven't known it. \n \"She hasn't called you.\" \n";
     cout << "Original line: \n" << str << '\n';
     cout << "Changed line (punctuation characters replaced by spaces): \n"
         << Punctuation_for_spaces(str) << '\n';
