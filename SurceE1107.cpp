@@ -1,15 +1,24 @@
 #include "../std_lib_facilities.h"
 
+void tolower(string& s);
 string Punctuation_for_spaces(const string& str);  // The function replaces punctuation marks (.,;? - ') 
                                                    // with spaces (does not change characters between pairs
                                                    // of double quotes (")).
-
+                                                   
 int main()
 {
     string str = " - don't use the \"as-if\" rule.";
     cout << str << '\n';
     cout << Punctuation_for_spaces(str) << '\n';
     return 0;
+}
+
+void tolower(string& s)
+{
+    for(char& x : s)
+    {
+        x = tolower(x);
+    }
 }
 
 string Punctuation_for_spaces(const string& str)
