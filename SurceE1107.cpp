@@ -4,7 +4,7 @@ string tolower(const string& s);                             // The function con
 string replaces_abbreviations_with_words(const string& str); // The function replaces abbreviations with words.
 string Punctuation_for_spaces(const string& str);            // The function replaces punctuation marks (.,;? - ') 
                                                              //  with spaces (does not change characters between pairs
-                                                             //  /*  */of double quotes (")).
+                                                             //  of double quotes (")).
                                                    
 int main()
 {
