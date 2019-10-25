@@ -7,7 +7,7 @@ string Punctuation_for_spaces(const string& str);  // The function replaces punc
                                                    
 int main()
 {
-    string str = " - don't use the \"as-if\" rule.";
+    string str = " - don't use the \"as-if\" rule.  - don't use the as-if rule.";
     cout << str << '\n';
     cout << Punctuation_for_spaces(str) << '\n';
     return 0;
@@ -37,7 +37,7 @@ string Punctuation_for_spaces(const string& str)
             temp = temp + ch;
         else if(!flag)
         {
-            if(ch == '.' || ch == ';' || ch == ',' || ch == '?' || ch == '-' || ch == (char)39)
+            if(ch == '.' || ch == ';' || ch == ',' || ch == '?'/*  || ch == '-' */ || ch == (char)39)
                 temp = temp + ' ';
             else
                 temp = temp + ch;
