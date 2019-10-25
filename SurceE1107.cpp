@@ -1,6 +1,7 @@
 #include "../std_lib_facilities.h"
 
 void tolower(string& s);
+void replaces_abbreviations_with_words(string& str);
 string Punctuation_for_spaces(const string& str);  // The function replaces punctuation marks (.,;? - ') 
                                                    // with spaces (does not change characters between pairs
                                                    // of double quotes (")).
@@ -37,11 +38,16 @@ string Punctuation_for_spaces(const string& str)
             temp = temp + ch;
         else if(!flag)
         {
-            if(ch == '.' || ch == ';' || ch == ',' || ch == '?'/*  || ch == '-' */ || ch == (char)39)
+            if(ch == '.' || ch == ';' || ch == ',' || ch == '?'/*  || ch == '-' */ /* || ch == (char)39 */)
                 temp = temp + ' ';
             else
                 temp = temp + ch;
         }  
     }
     return temp;
+}
+
+void replaces_abbreviations_with_words(string& str)
+{
+    
 }
